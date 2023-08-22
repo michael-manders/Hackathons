@@ -1,0 +1,14 @@
+[
+    {
+        "name": "default",
+        "colors": ["f5f5f5", "d0d0d0", "a0a0a0", "787878", "4c4c4c"]
+    },
+    {
+        "name": "purple",
+        "colors": ["f0daff", "e8c0fd", "d4a4f5", "a47dd0", "60467b"]
+    },
+    {
+        "name": "green",
+        "colors": ["ceeed4", "c3eacb", "a7d0a6", "597253", "3b4e36"]
+    }
+]

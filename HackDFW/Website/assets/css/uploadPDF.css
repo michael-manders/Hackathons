@@ -1,0 +1,18 @@
+img {
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 2vh;
+}
+body {
+    justify-content: center;
+    align-content: center;
+
+}
+
+#inputFile {
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5%;
+    margin-top: 2vw;
+    margin-left: 40vw;
+}

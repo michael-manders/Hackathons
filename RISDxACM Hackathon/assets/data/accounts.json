@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Michael Manders",
+        "password": "pass123",
+        "email": "mjmanders1234@gmail.com",
+        "pfpImgPath": "./assets/images/pfps/Michael Manders.png",
+        "school": "Richardson High School"
+    },
+    {
+        "name": "Jennifer",
+        "password": "123456789",
+        "email": "jennifer@gmail.com",
+        "pfpImgPath": "./assets/images/pfps/Jennifer.png",
+        "school": "Berkner High School"
+    },
+    {
+        "name": "Ellie",
+        "password": "ellierose",
+        "email": "eh382662@g.risd.org",
+        "pfpImgPath": "./assets/images/pfps/ellie.png",
+        "school": "Richland College"
+    },
+    {
+        "name": "Test Account",
+        "password": "12345",
+        "email": "test@mail.com",
+        "pfpImgPath": "./assets/images/pfps/Test Account.png",
+        "school": "UT Dallas"
+    }
+]

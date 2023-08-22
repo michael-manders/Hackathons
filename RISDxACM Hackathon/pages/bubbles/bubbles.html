@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../assets/css/home.css" />
+        <script>
+            // variables
+            const user = "[user]";
+            const pass = "[pass]";
+            const userid = "[userid]";
+
+            setInterval(() => {
+                slider = document.getElementById("myRange");
+                value = slider.value;
+                value = parseInt(value)
+
+                circle = document.getElementById("dot");
+                circle.style.width = value * .10 + "vw";
+                circle.style.height = value * .10 + "vw";
+
+            }, 50)
+
+            // functions
+            function toggleUserMenu() {
+                const userMenu = document.getElementById("user-menu");
+                if (userMenu.style.display == "block") {
+                    userMenu.style.display = "none";
+                } else {
+                    userMenu.style.display = "block";
+                }
+            }
+            window.addEventListener('DOMContentLoaded', () => {
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("value");
+            const size =  document.getElementById("value");
+            
+
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            } 
+            })
+        </script>
+
+        <link rel="stylesheet" href="../assets/css/bubbles.css">
+        <link rel="stylesheet" href="../assets/css/navbar.css" />
+        
+        <title>Educator Exchange</title>
+    </head>
+
+    <body>
+        <div include-html="navbar.html"></div>
+      
+        
+        <img src="../assets/images/bubble-map.png" alt="map" class="image" id="fake"> 
+        <div style = margin-left:50% auto;>
+
+        
+            <div class="container"><div class="container">
+        	<form class="modal-content" action="/action_page.php">
+            <div class="container"><div class="container">
+            
+                <h1><center>Pencils</center> </h1>
+                
+                <center><var>2.1 Miles away</var></center>
+                <center><var>Unit Price: $0.08</var></center>
+                
+                <div id="dot-container">
+                    <center><div id="dot"></div></center>
+                    <center><div id="dot2"></div></center>
+                </div>
+                <center><var>Your Contribution</var></center>
+                  <div class="sliderContainer">
+    <input type="range" min="1" max=250 value="1" id="myRange" class="slider"></div>
+    <p>Pencils: <span id="value"></span> </p>
+
+</body>
+                
+
+
+                <div >
+                    
+                    <button>Join Bubble!</button>
+                </div>
+            </div>
+        </form>
+        
+        
+        
+        
+    </body>
+</html>
+
+<script src="../assets/scripts/navbar.js"></script>

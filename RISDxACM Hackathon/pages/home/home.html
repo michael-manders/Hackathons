@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Educator Exchange</title>
+        <link rel="stylesheet" href="../assets/css/home.css" />
+        <link rel="stylesheet" href="../assets/css/navbar.css" />
+        <!-- <script src="https
+            ://maps.googleapis.com/maps/api/js?key=AIzaSyC8nz22aqHHsu980Jc1E_X33UFxeQpqn08"></script> -->
+
+        <script>
+            // variables
+            const user = "[user]";
+            const pass = "[pass]";
+            const userid = "[userid]";
+            let items = "[items]";
+            const userlc = "[userlc]";
+        </script>
+    </head>
+
+    <body>
+        <div include-html="navbar.html"></div>
+
+        <div id="container">
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+            <div id="listings"></div>
+        </div>
+    </body>
+</html>
+
+<script src="../assets/scripts/navbar.js"></script>
+<script>
+    function initMap() {
+        var map1 = new google.maps.Map(document.getElementById("map"), {
+            center: {
+                lng: parseFloat(userlc.long),
+                lat: parseFloat(userlc.lat),
+            },
+            zoom: 13,
+        });
+
+        for (item of items) {
+            // console.log(item.name);
+            var marker = new google.maps.Marker({
+                position: {
+                    lng: item.locatiion.long,
+                    lat: item.locatiion.lat,
+                },
+                map: map1,
+                title: item.name,
+            });
+
+            var infoWindow1 = new google.maps.InfoWindow({
+                content: item.name,
+            });
+
+            infoWindow1.open(map1, marker);
+
+            // put the marker on the mpa
+            // marker.setMap(map);
+
+            html = `
+          <div class="item">
+            <img src=".${item.imgPath}" alt="${item.name}" class="item-image" />
+            <h2>${item.name}</h2>
+            <p>Quantity: ${item.quantity}</p>
+            <button class="item-button">Request items from ${item.holder}</button>
+          </div>
+          `;
+            document.getElementById("listings").innerHTML += html;
+        }
+    }
+</script>
+<script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8nz22aqHHsu980Jc1E_X33UFxeQpqn08&callback=initMap"></script>

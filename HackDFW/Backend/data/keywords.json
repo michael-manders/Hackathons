@@ -1,0 +1,22 @@
+{
+    "transport": {
+        "keywords": ["moved", "transported"],
+        "variablePrefixes": ["moved", "over", "in"] 
+    },
+    "production": {
+        "keywords": ["produced", "manufacturd"],
+        "variablePrefixes": ["produced", "takes"]
+    },
+    "land": {
+        "keywords": ["used", "built on", "extracted resources from"],
+        "variablePrefixes": ["used", "of"]
+    },
+    "electric": {
+        "keywords": ["kilowatt", "watt"],
+        "variablePrefixes": ["use",  "from"]
+    },
+    "consumer": {
+        "keywords": ["products", "consumer"],
+        "variablePrefixes": ["our", "produce"]
+    }
+}

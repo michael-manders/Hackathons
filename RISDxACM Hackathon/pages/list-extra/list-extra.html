@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>list-extra</title>
+        <link rel="stylesheet" href="../assets/css/navbar.css" />
+        <link rel="stylesheet" href="../assets/css/list-extra.css" />
+
+        <script>
+            // keep quantity lable correct
+            setInterval(() => {
+                var slider = document.getElementsByName("amount")[0];
+                var output = document.getElementById("value");
+
+                let elm = document.getElementById("amount-lable");
+                elm.innerHTML = "Quantity: " + slider.value;
+            }, 50);
+
+            user = "[user]";
+            items = "[items]";
+        </script>
+        <title>Educator Exchange</title>
+    </head>
+    <body>
+        <div include-html="navbar.html"></div>
+        <div id="container">
+            <div id="items">
+                <h1>Currently Listed Items</h1>
+                <div id="items-list"></div>
+            </div>
+            <div id="add-item">
+                <form
+                    action="./list-extra"
+                    enctype="multipart/form-data"
+                    method="POST">
+                    <h1>List Extra Item</h1>
+                    <label for="item">Item Name</label> <br />
+                    <input type="text" name="item" placeholder="Item" />
+                    <br />
+                    <!-- slider for amount -->
+                    <label for="amount" id="amount-lable">Quantity: 1</label>
+                    <br />
+                    <input
+                        type="range"
+                        name="amount"
+                        min="1"
+                        max="100"
+                        value="1" />
+                    <br />
+                    <label for="image">Image Upload</label>
+                    <br />
+                    <input type="file" name="image" />
+                    <br />
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="../assets/scripts/navbar.js"></script>
+<script>
+    // itemList = document.getElementById("items-list");
+    for (item of items) {
+        console.log(item);
+        html = `
+                <div class="item">
+                    <img src=".${item.imgPath}" alt="${item.name}" class="item-image" />
+                    <h2>${item.name}</h2>
+                    <p>Quantity: ${item.quantity}</p>
+                </div>
+                `;
+        document.getElementById("items-list").innerHTML += html;
+    }
+</script>

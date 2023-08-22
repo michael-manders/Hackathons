@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Scissors",
+        "imgPath": "./assets/images/items/Scissors.jpeg",
+        "holder": "Michael Manders",
+        "quantity": "7"
+    },
+    {
+        "name": "Crayons",
+        "imgPath": "./assets/images/items/Crayons.jpg",
+        "holder": "Ellie",
+        "quantity": "96"
+    },
+    {
+        "name": "Rulers",
+        "imgPath": "./assets/images/items/Rulers.png",
+        "holder": "Jennifer",
+        "quantity": "5"
+    },
+    {
+        "name": "Pencil",
+        "imgPath": "./assets/images/items/Pencil.jpeg",
+        "holder": "Test Account",
+        "quantity": "75"
+    }
+]

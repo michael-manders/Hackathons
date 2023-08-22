@@ -1,0 +1,14 @@
+{
+    "transportation": {
+        "trucks": 0.000115743,
+        "planes": 0.000551156,
+        "trains": 0.00007165,
+        "boats": 0.000027558
+    },
+    "electric": {
+        "coal": 0.001115,
+        "natural gas": 0.000455,
+        "petrolium": 0.001065,
+        "nuclear / renewable": 0
+    }
+}

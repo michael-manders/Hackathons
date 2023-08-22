@@ -1,0 +1,40 @@
+{
+    "transport": {
+        "replacements": [["trucks", "trains"], ["planes", "boats"]],
+        "general": [
+            
+        ]
+    },
+    "production": {
+       "replacements": [],
+       "general": ["Inspect factories for leaks", "try to minimize burning of chemicals in factories"]
+    },
+    "land": {
+        "replacements": [],
+        "general": [
+            "Invest in reforestation of areas that you are chopping down", "use lumber from places that are actively reforested"
+        ]
+    },
+    "electric": {
+        "replacements": [
+            ["coal", "nuclear / renewable"], ["natural gas", "nuclear / renewable"], ["oil", "nuclear / renewable"]
+        ],
+        "general": [
+            "Use green energy instead of coal, natural gas or oil"
+        ]
+    },
+    "consumer": {
+        "replacements": [],
+        "general": [
+            "Invest in RND to make the products more efficent"
+        ]
+    },
+    "commuting": {
+        "replacements": [
+            ["car", "trains"]
+        ],
+        "general": [
+            "Iive employees free passes for public transportation"
+        ]
+    }
+}
