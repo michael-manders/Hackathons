@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Michael Manders",
+        "email": "mjmanders1234@gmail.com",
+        "type": "HVAC",
+        "text": "The air conditioning in my room is not working very well\n",
+        "floor": "1"
+    },
+    {
+        "name": "Daniyal Kadar",
+        "email": "daniyalkadar@gmail.com",
+        "type": "Elevator",
+        "text": "One of the elevator buttons is broken on the 2nd elevator.",
+        "floor": "5"
+    },
+    {
+        "name": "Wesley Philips",
+        "email": "wesphilips@gmail.com",
+        "type": "Plumbing System",
+        "text": "Leaky pipes in the bathroom in the mens bathroom",
+        "floor": "8"
+    },
+    {
+        "name": "Ben Le",
+        "email": "benle@gmail.com",
+        "type": "Plumbing System",
+        "text": "Leaky pipes in the mens bathroom on floor 8",
+        "floor": "8"
+    },
+    {
+        "name": "Ben Le",
+        "email": "benle@gmail.com",
+        "type": "Fire Alarm",
+        "text": "fire alarm unpowered",
+        "floor": "2"
+    },
+    {
+        "name": "Erick De La Cruz",
+        "email": "erickdelacruz@gmail.com",
+        "type": "Electric Panel",
+        "text": "Sparking wires in the floor electric panel",
+        "floor": "2"
+    },
+    {
+        "name": "Wesley Philips",
+        "email": "wesphilips@gmail.com",
+        "type": "Elevator",
+        "text": "Elevator missing a button",
+        "floor": "8"
+    },
+    {
+        "name": "Benjamin Le",
+        "email": "benle@gmail.com",
+        "type": "Electrical Panel",
+        "text": "Electric pannel not providing power.",
+        "floor": "3"
+    },
+    {
+        "name": "Erick De La Cruz",
+        "email": "erickdelcruz@gmail.com",
+        "type": "Electrical Panel",
+        "text": "The electric panel is sparking when new things are plugged in.",
+        "floor": "9"
+    },
+    {
+        "name": "Wesley Philips",
+        "email": "wesleyphilips@gmail.com",
+        "type": "Elevator",
+        "text": "Elevator is stuck at the ground floor.",
+        "floor": "1"
+    },
+    {
+        "name": "Daniyal Kadar",
+        "email": "daniyalkadar@gmail.com",
+        "type": "Plumbing System",
+        "text": "Drain clogged in the kitchen sink.",
+        "floor": "7"
+    },
+    {
+        "name": "Michael",
+        "email": "mjmanders1234@gmail.com",
+        "type": "Electrical Panel",
+        "text": "The electric panel is randomly switching off.",
+        "floor": "6"
+    }
+]

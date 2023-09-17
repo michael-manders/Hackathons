@@ -1,0 +1,75 @@
+/* WorkOrders.css */
+.workorder-contain {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--text);
+    text-align: center;
+}
+
+.workorder-container {
+    /* background-color: ; */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    background-color: var(--secondary);
+}
+
+.workorder-header {
+    text-align: center;
+    color: var(--text);
+}
+
+.workorder-form {
+    margin-top: 20px;
+    color: var(--text);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin: 2% 5% 2% 5%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--text);
+}
+
+select {
+    width: 102.45% !important;
+}
+.submit-button {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 2% 9%;
+    border-radius: 1vw;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+    margin-left: 37.5%;
+}
+
+.submit-button:hover {
+    background-color: var(--accent);
+    color: var(--text);
+    cursor: pointer;
+}

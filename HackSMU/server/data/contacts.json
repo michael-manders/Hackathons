@@ -1,0 +1,22 @@
+{
+    "electric": {
+        "email": "mjmanders1234@gmail.com",
+        "phone": "2144128682@txt.att.net"
+    },
+    "plumbing": {
+        "email": "mjmanders1234@gmail.com",
+        "phone": "4695584850@txt.att.net"
+    },
+    "fire": {
+        "email": "mjmanders1234@gmail.com",
+        "phone": "2144607547@txt.att.net"
+    },
+    "hvac": {
+        "email": "mjmanders1234@gmail.com",
+        "phone": "9727302430@vtext.com"
+    },
+    "elevator": {
+        "email": "mjmanders1234@gmail.com",
+        "phone": "4695142455@tmomail.net"
+    }
+}

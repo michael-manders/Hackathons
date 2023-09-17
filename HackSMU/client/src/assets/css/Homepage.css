@@ -1,0 +1,140 @@
+.container {
+    width: 100%;
+    height: 90%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#about {
+    width: 50%;
+    height: 100%;
+    /* background-color: #f2f2f2; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#mission {
+    margin-top: 13%;
+    margin-left: 10%;
+    width: 80%;
+    height: 30%;
+}
+
+#mission > #text {
+    color: var(--text);
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.color {
+    background: linear-gradient(120deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#vision {
+    width: 70%;
+    height: 30%;
+    margin-top: 8%;
+}
+
+#vision > #text {
+    font-size: 2.2rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+#about-scroll {
+    width: 45%;
+    height: 80%;
+    margin-top: 5%;
+    margin-right: 5%;
+    /* background-color: red; */
+}
+
+#selector {
+    height: 60%;
+    width: 1%;
+    background-color: var(--accent);
+    position: relative;
+    top: 6vh;
+    left: 42vw;
+    border-radius: 1vw;
+}
+
+#icons {
+    width: 5vw;
+    height: 100%;
+    transform: translateX(-44%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon > svg {
+    width: 2vw;
+    height: 2vw;
+}
+
+.tooltip {
+    scale: 0%;
+    transform-origin: left;
+    position: absolute;
+    border-radius: 1vw;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    width: 30vw;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    right: 5rem;
+    color: var(--text);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 100ms;
+    --tw-bg-opacity: 1;
+    background-color: var(--secondary);
+    transform-origin: right;
+    /* scale: 100%; */
+}
+
+.tooltip > .title-tt {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 2% 0 2% 5%;
+}
+
+.tooltip > .text {
+    width: 90%;
+    margin: 0 0 2% 5%;
+    text-wrap: wrap;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+.icon:hover > .tooltip {
+    scale: 100%;
+}
+
+.icon:hover > .tooltip {
+    scale: 100%;
+}

@@ -1,0 +1,105 @@
+#chatbot {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    position: fixed;
+}
+
+#container {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+}
+
+#chatbot-container {
+    width: 100%;
+    height: 100%;
+}
+
+#chatbot-input {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chatbot-input input {
+    width: 60%;
+    height: 50%;
+    background-color: var(--primary);
+    border: none !important;
+    outline: none;
+    font-size: 1.5rem;
+    text-indent: 1vw;
+    border-radius: 1vw;
+}
+
+#chatbot-input input::selection {
+    background-color: var(--secondary);
+    color: var(--accent);
+}
+
+#chatbot-input img {
+    height: 45%;
+    aspect-ratio: 1/1;
+    margin-left: 1.5vw;
+    cursor: pointer;
+}
+
+#chatbot-input img:hover {
+    /* enlarge on hover */
+    animation: zoom 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+#chatbot-messages {
+    width: 100%;
+    height: 85%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    /* width fit content up to 50% then start adding text wrapping*/
+    max-width: 65%;
+    word-wrap: break-word;
+    width: fit-content;
+    height: fit-content;
+    margin: 2vw 2vw 0 2vw;
+    border-radius: 1vw;
+    padding: 1vh 2vw;
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+.message div {
+    margin: 1.5vh 0 1.5vh 0;
+}
+
+.chatbot {
+    background-color: var(--secondary);
+    /* move to left */
+    align-self: flex-start;
+}
+
+.user {
+    background-color: var(--secondary-light);
+    /* move to right */
+    align-self: flex-end;
+}
+
+.loading img {
+    width: 4vw;
+    aspect-ratio: 1/1;
+    margin: 0;
+}

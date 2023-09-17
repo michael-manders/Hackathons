@@ -1,0 +1,196 @@
+#visualization {
+    background-color: var(--background);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-left: 1rem;
+    /* padding-right: 1rem; */
+    padding-bottom: 1rem;
+    /* padding: 1rem; */
+}
+
+#content {
+    width: 94vw;
+    height: 90vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#content > div {
+    margin: 1rem;
+    border-radius: 1vw;
+}
+
+#atrisk {
+    width: 45%;
+    height: 58%;
+    background-color: var(--secondary);
+    overflow: scroll;
+    text-align: center;
+}
+
+#atrisk-title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 2% 0 2% 0;
+}
+
+#workorders {
+    width: 45%;
+    height: 58%;
+    background-color: var(--secondary);
+    overflow: scroll;
+    text-align: center;
+}
+
+#workorders-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2% 0 2% 0;
+}
+
+#graph {
+    width: calc(90% + 2rem);
+    height: 30%;
+    background-color: var(--secondary);
+}
+
+#tempupdata {
+    width: 10vw;
+    height: 10vh;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+.item-level {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 100%;
+}
+
+.low {
+    background-color: #1fab30;
+}
+
+.medium {
+    background-color: #f5e000;
+}
+
+.high {
+    background-color: #f54242;
+}
+
+.item {
+    height: 30%;
+    width: 90%;
+    background-color: var(--secondary-light);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1vw;
+    margin-left: 2vw;
+}
+
+.attribute {
+    width: 30%;
+    height: 40%;
+    text-align: center;
+    /* background-color: red; */
+    line-height: 1.4rem;
+    margin-left: 1.5% !important;
+    margin-right: 1.5% !important;
+}
+
+.attribute .key {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(189, 189, 189);
+    height: 10%;
+}
+
+.attribute .value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.top {
+    margin: 1rem 0 2% 0;
+}
+
+.bottom {
+    margin-bottom: 1rem;
+}
+
+.high {
+    border: 3px solid #f54242;
+}
+
+.medium {
+    border: 3px solid #f5e000;
+}
+
+.low {
+    border: 3px solid #1fab30;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#graph img {
+    z-index: 2;
+}
+
+#graphTitle {
+    color: var(--text);
+    z-index: 1;
+    position: absolute;
+    font-size: 2.3rem;
+    top: 64%;
+}
+
+.workorder {
+    height: 30%;
+    width: 90%;
+    background-color: var(--secondary-light);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1vw;
+    margin-left: 2vw;
+}
+
+.wide {
+    width: 90% !important;
+}
+
+.wide > .value {
+    font-size: 1.3rem;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chatbot</title>
+        <script>
+            API_PATH = "http://127.0.0.1:5000/chatbot";
+            msg_history = [];
+            // send message
+            // get response
+            // display response
+            // log to history
+            async function messageSend() {
+                message = document.querySelector('input[name="message"]').value;
+                console.log(message);
+                msg_history.push({ role: "user", content: message });
+
+                // send message to server
+                path = `${API_PATH}?message=${message}&history=${JSON.stringify(
+                    msg_history
+                )}`;
+                // console.log(path);
+                const responce = await fetch(path);
+                const data = await responce.json();
+                console.log(data.content);
+
+                msg_history.push({ role: "assistant", content: data.content });
+            }
+
+            // display history
+            function displayHistory() {
+                chat = document.querySelector("#chat");
+                chat.innerHTML = "";
+                history.forEach((item) => {
+                    chat.innerHTML += `<div>${item.role}: ${item.content}</div>`;
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <input
+                type="text"
+                name="message"
+                id=""
+                style="width: 50%; height: 20%" />
+            <button onclick="messageSend()">Send</button>
+
+            <div id="chat"></div>
+        </div>
+    </body>
+</html>

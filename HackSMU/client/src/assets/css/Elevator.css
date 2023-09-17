@@ -1,0 +1,23 @@
+#elevator {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    --tw-bg-opacity: 1;
+    background-color: rgb(12 52 65 / var(--tw-bg-opacity));
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    height: 50%;
+    /* --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity)); */
+}
+
+#bottom {
+    display: flex;
+    padding: 0.5rem;
+}

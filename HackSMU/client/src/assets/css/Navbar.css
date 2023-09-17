@@ -1,0 +1,78 @@
+#navbar {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+#navlinks > .link {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#navlinks > .link:hover:not(#workorder) {
+    color: var(--primary);
+}
+
+#workorder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 6vh;
+    border-radius: 0.5vw;
+    background-color: var(--primary);
+    /* color: var(--) !important; */
+}
+
+#workorder:hover {
+    /* blur dropshadow */
+    filter: drop-shadow(0 0 0.75rem var(--primary));
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#logo > #acorn {
+    height: 7vh;
+    aspect-ratio: 1/1;
+    margin: 1vw 0 1vw 1vw;
+}
+
+#logo > #text {
+    height: 7vh;
+    width: auto;
+    margin: 1vw 0 1vw 1vw;
+    transform: translateX(-1.5vw);
+}
+
+/* spin logo based on bezier curve  on hover*/
+#logo > #acorn:hover {
+    animation: spin 0.75s cubic-bezier(0.23, 0.77, 0.54, 0.97);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
